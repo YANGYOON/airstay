@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "toastr";
  
 .avatar_small {
   width: 28px;
@@ -15,4 +16,8 @@
 
 .avatar_full {
   width: 100%;
+}
+
+.flash.alert:empty {
+  display: none;
 }
