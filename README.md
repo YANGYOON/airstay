@@ -4,8 +4,9 @@
 # Description
 
 # アピールポイント
-##1.Gravatarで画像アイコン表示
-##2.gemのtoastr-railsでログインや登録時などのnotificationを表示
+-Gravatarで画像アイコン表示
+-gemのtoastr-railsでログインや登録時などのnotificationを表示
+-部屋掲載機能
 
 # DB設計図
 ## users table
