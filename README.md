@@ -11,7 +11,13 @@
 # DB設計図
 ## users table
 |Column|Type|Options|
-|------|----|-------|
+|email|string|-------|
+|password|string|-------|
+|fullname|string|-------|
+|phone_number|intger|-------|
+|description|text|-------|
+
+
 ### Association
 -has_many: rooms
 
