@@ -9,6 +9,12 @@
 -部屋掲載機能(非同期通信画像削除、掲載手順チェックマーク)
 -部屋ページ(GoogleMAP)
 
+# TODO LIST
+-予約
+-レビュー
+-検索機能
+-ホームページ
+
 # DB設計図
 ## users table
 |Column|Type|Options|
