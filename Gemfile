@@ -42,3 +42,4 @@ gem 'toastr-rails'
 
 gem 'paperclip', '~> 5.1.0'
 
+gem 'geocoder', '~> 1.4'
