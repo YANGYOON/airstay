@@ -10,7 +10,6 @@
 
 # アピールポイント
 - Gravatarで画像アイコン表示
-[![Image from Gyazo](https://i.gyazo.com/b33363c40df5593c480e4844a07ea6e8.png)](https://gyazo.com/b33363c40df5593c480e4844a07ea6e8)
 - gemのtoastr-railsでログインや登録時などのnotificationを表示
 [![Image from Gyazo](https://i.gyazo.com/f28d7c5af30cef60fda12c500af66687.png)](https://gyazo.com/f28d7c5af30cef60fda12c500af66687)
 - 部屋掲載機能(非同期通信画像削除、掲載手順チェックマーク)
