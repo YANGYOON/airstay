@@ -1,33 +1,40 @@
 # README
 
+# NAME: AIRSTAY vacation rental platform
 
 # Description
+自身の経歴したAIRBNBホスト時代に運営したプラットフォームに感銘を受け、
+現在トレンドでもあるP2Pビジネスの形態の一つとして、
+シェアリングエコノミープラットフォームを作ることに試みました。
+まだ進行中。
 
 # アピールポイント
--Gravatarで画像アイコン表示
--gemのtoastr-railsでログインや登録時などのnotificationを表示
--部屋掲載機能(非同期通信画像削除、掲載手順チェックマーク)
--部屋ページ(GoogleMAP)
+  Gravatarで画像アイコン表示
+  gemのtoastr-railsでログインや登録時などのnotificationを表示
+  部屋掲載機能(非同期通信画像削除、掲載手順チェックマーク)
+  部屋ページ(GoogleMAP)
 
 # TODO LIST
--予約
--レビュー
--検索機能
--ホームページ
+  予約
+  レビュー
+  検索機能
+  ホームページ
 
 # DB設計図
 ## users table
 |Column|Type|Options|
+|------|----|-------|
 |email|string|-------|
 |password|string|-------|
 |fullname|string|-------|
 |phone_number|intger|-------|
 |description|text|-------|
 ### Association
--has_many: rooms
+- has_many: rooms
 
 ## rooms table
 |Column|Type|Options|
+|------|----|-------|
 |home_type|string|-------|
 |room_type|string|-------|
 |accommodate|integer|-------|
@@ -44,14 +51,15 @@
 |active|boolean|-------|
 |user|references|foreign_key: true|
 ### Association
--belongs_to: user
--has_many: photos
+- belongs_to: user
+- has_many: photos
 
 ## photo table
 |Column|Type|Options|
+|------|----|-------|
 |room_id|references|-------|
 |images|text|-------|
 ### Association
--belongs_to: rooms
+- belongs_to: rooms
 
 
