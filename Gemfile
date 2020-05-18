@@ -41,3 +41,4 @@ gem 'devise', '~> 4.2'
 gem 'toastr-rails'
 
 gem 'paperclip', '~> 5.1.0'
+

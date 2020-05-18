@@ -7,6 +7,7 @@
 -Gravatarで画像アイコン表示
 -gemのtoastr-railsでログインや登録時などのnotificationを表示
 -部屋掲載機能(非同期通信画像削除、掲載手順チェックマーク)
+-部屋ページ(GoogleMAP)
 
 # DB設計図
 ## users table
