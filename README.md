@@ -6,7 +6,7 @@
 # アピールポイント
 -Gravatarで画像アイコン表示
 -gemのtoastr-railsでログインや登録時などのnotificationを表示
--部屋掲載機能
+-部屋掲載機能(非同期通信画像削除)
 
 # DB設計図
 ## users table
@@ -16,8 +16,6 @@
 |fullname|string|-------|
 |phone_number|intger|-------|
 |description|text|-------|
-
-
 ### Association
 -has_many: rooms
 
@@ -40,3 +38,13 @@
 |user|references|foreign_key: true|
 ### Association
 -belongs_to: user
+-has_many: photos
+
+## photo table
+|Column|Type|Options|
+|room_id|references|-------|
+|images|text|-------|
+### Association
+-belongs_to: rooms
+
+
