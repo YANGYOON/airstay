@@ -40,6 +40,6 @@ gem 'devise', '~> 4.2'
 
 gem 'toastr-rails'
 
-gem 'paperclip', '~> 5.1.0'
+gem 'paperclip', '~> 5.2.0'
 
 gem 'geocoder', '~> 1.4'
