@@ -32,31 +32,34 @@ https://qiita.com/YANG_LIU
 ## users table
 |Column|Type|Options|
 |------|----|-------|
-|email|string|-------|
-|password|string|-------|
-|fullname|string|-------|
-|phone_number|intger|-------|
-|description|text|-------|
+|email|string|null: false|
+|password|string|null: false|
+|fullname|string|null: false|
+|phone_number|intger|null: false|
+|description|text|null: false|
 ### Association
 - has_many: rooms
 
 ## rooms table
 |Column|Type|Options|
 |------|----|-------|
-|home_type|string|-------|
-|room_type|string|-------|
-|accommodate|integer|-------|
-|bed_room|integer|-------|
-|bath_room|integer|-------|
-|listing_name|string|-------|
-|summary|text|-------|
-|is_tv|boolean|-------|
-|is_kitchen|boolean|-------|
-|is_aircon|boolean|-------|
-|is_heating|boolean|-------|
-|is_internet|boolean-------|
-|price|integer|-------|
-|active|boolean|-------|
+|home_type|string|null: false|
+|room_type|string|null: false|
+|accommodate|integer|null: false|
+|bed_room|integer|null: false|
+|bath_room|integer|null: false|
+|listing_name|string|null: false|
+|summary|text|null: false|
+|address|text|null: false|
+|is_tv|boolean|null: false|
+|is_kitchen|boolean|null: false|
+|is_aircon|boolean|null: false|
+|is_heating|boolean|null: false|
+|is_internet|boolean|null: false|
+|price|integer|null: false|
+|active|boolean|null: false|
+|latitude|float|null: false|
+|longitude|float|null: false|
 |user|references|foreign_key: true|
 ### Association
 - belongs_to: user
@@ -65,8 +68,8 @@ https://qiita.com/YANG_LIU
 ## photo table
 |Column|Type|Options|
 |------|----|-------|
-|room_id|references|-------|
-|images|text|-------|
+|room_id|references|null: false|
+|images|text|null: false|
 ### Association
 - belongs_to: rooms
 
